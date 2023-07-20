@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <header><i class='bx bx-left-arrow-alt'></i> Weather App</header>
+        <section class="input-part">
+            <p class="info-txt">Please Enter a Valid city name !</p>
+            <input type="text" placeholder="Enter city name" spellcheck="false" required>
+            <div class="separator"></div>
+            <button>Get Device Location</button>
+        </section>
+        <section class="weather-part">
+            <img src="#" alt="weather icon">
+            <div class="temp">
+                <span class="numb">_</span>
+                <span class="deg">°</span>C
+            </div>
+            <div class="weather">_ _</div>
+            <div class="location">
+                <i class='bx bxs-map'></i>
+                <span>_, _</span>
+            </div>
+            <div class="bottom-details">
+                <div class="column feels">
+                    <i class='bx bxs-thermometer'></i>
+                    <div class="details">
+                        <p class="feel">Feels like</p>
+                        <div class="temp">
+                            <span class="numb-2">_</span>
+                            <span class="deg">°</span>C
+                        </div>
+                    </div>
+                </div>
+                <div class="column humidity">
+                    <i class='bx bxs-droplet-half'></i>
+                    <div class="details">
+                        <p>Humidity</p>
+                        <span class="numb">_</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</html>
