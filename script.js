@@ -63,17 +63,17 @@ function weatherDetails(info) {
         const {feels_like, humidity, temp} = info.main;
 
         if (id == 800) {
-            wIcon.src = "Weather Icons/clear.svg";
+            wIcon.src = "weather-app-icons/Weather Icons/clear.svg";
         } else if (id >= 200 && id <= 232) {
-            wIcon.src = "Weather Icons/storm.svg";
+            wIcon.src = "weather-app-icons/Weather Icons/storm.svg";
         } else if (id >= 600 && id <= 622) {
-            wIcon.src = "Weather Icons/snow.svg";
+            wIcon.src = "weather-app-icons/Weather Icons/snow.svg";
         } else if (id >= 701 && id <= 781) {
-            wIcon.src = "Weather Icons/haze.svg";
+            wIcon.src = "weather-app-icons/Weather Icons/haze.svg";
         } else if (id >= 801 && id <= 804) {
-            wIcon.src = "Weather Icons/cloud.svg";
+            wIcon.src = "weather-app-icons/Weather Icons/cloud.svg";
         } else if ((id >= 300 && id <= 321) || (id >= 500 && id <= 531)) {
-            wIcon.src = "Weather Icons/rain.svg";
+            wIcon.src = "weather-app-icons/Weather Icons/rain.svg";
         }
 
         wrapper.querySelector(".temp .numb").innerText = Math.floor(temp);
